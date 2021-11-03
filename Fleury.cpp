@@ -4,8 +4,8 @@ using namespace std;
 
 class Graph{
 	
-	int vertex; // number of vertices
-	vector<vector<int>> adj; // adjacency list
+	int vertex;
+	vector<vector<int>> adj; 
 	
 	public:
 		
@@ -47,8 +47,8 @@ class Graph{
 		
 		void printEulerPathCircuit(){
 			
-			int odd = 0; // number of vertices with odd degree
-			int oddVertex = 0; // it stores vertex with odd degree if it exists
+			int odd = 0; 
+			int oddVertex = 0;
 			
 			for(int i=1;i<=vertex;++i){
 				if(adj[i].size()%2==1){
@@ -147,7 +147,7 @@ class Graph{
 
 int main()
 {
-	// graph G, containing 7 vertices from 1 to 7.
+	
 	Graph G(7);
 	
 
